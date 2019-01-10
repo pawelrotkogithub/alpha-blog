@@ -10,7 +10,7 @@ require 'test_helper'
     assert @category.valid?
   end
 
-  test "name should be present" do
+  test "name should be presetn" do
     @category.name = " "
     assert_not @category.valid?
   end
