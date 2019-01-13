@@ -8,7 +8,6 @@ class CategoriesController < ApplicationController
 
   def new
     @category = Category.new
-
   end
 
   def create
@@ -16,7 +15,6 @@ class CategoriesController < ApplicationController
     if @category.save
     flash[:sucess] = "Category was created sucessfully"
     redirect_to categories_path
-
     else
       render 'new'
     end
